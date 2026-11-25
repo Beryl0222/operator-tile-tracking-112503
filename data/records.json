@@ -1,0 +1,291 @@
+{
+  "frames": [
+    {
+      "frame_id": "f1",
+      "sequence": 1,
+      "tiles": [
+        "left",
+        "right"
+      ],
+      "offsets": {
+        "left": [
+          0,
+          0
+        ],
+        "right": [
+          8,
+          0
+        ]
+      },
+      "coverage": {
+        "left": [
+          0,
+          0,
+          12,
+          12
+        ],
+        "right": [
+          8,
+          0,
+          20,
+          12
+        ]
+      },
+      "detections": [
+        {
+          "candidate_id": "a",
+          "tile": "left",
+          "box": [
+            8,
+            2,
+            11,
+            8
+          ],
+          "score": 0.9,
+          "label": 1,
+          "embedding": [
+            1,
+            0
+          ]
+        },
+        {
+          "candidate_id": "b",
+          "tile": "right",
+          "box": [
+            0,
+            2,
+            3,
+            8
+          ],
+          "score": 0.9,
+          "label": 1,
+          "embedding": [
+            1,
+            0
+          ]
+        },
+        {
+          "candidate_id": "c",
+          "tile": "right",
+          "box": [
+            4,
+            2,
+            7,
+            8
+          ],
+          "score": 0.88,
+          "label": 1,
+          "embedding": [
+            0,
+            1
+          ]
+        },
+        {
+          "candidate_id": "g",
+          "tile": "left",
+          "box": [
+            2,
+            2,
+            5,
+            8
+          ],
+          "score": 0.83,
+          "label": 1,
+          "embedding": [
+            0.6,
+            0.8
+          ]
+        }
+      ]
+    },
+    {
+      "frame_id": "f2",
+      "sequence": 2,
+      "tiles": [
+        "right"
+      ],
+      "offsets": {
+        "right": [
+          8,
+          0
+        ]
+      },
+      "coverage": {
+        "right": [
+          8,
+          0,
+          20,
+          12
+        ]
+      },
+      "detections": [
+        {
+          "candidate_id": "d",
+          "tile": "right",
+          "box": [
+            4,
+            2,
+            7,
+            8
+          ],
+          "score": 0.91,
+          "label": 1,
+          "embedding": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "frame_id": "f3",
+      "sequence": 3,
+      "tiles": [
+        "left",
+        "right"
+      ],
+      "offsets": {
+        "left": [
+          0,
+          0
+        ],
+        "right": [
+          8,
+          0
+        ]
+      },
+      "coverage": {
+        "left": [
+          0,
+          0,
+          12,
+          12
+        ],
+        "right": [
+          8,
+          0,
+          20,
+          12
+        ]
+      },
+      "detections": [
+        {
+          "candidate_id": "e",
+          "tile": "left",
+          "box": [
+            8,
+            2,
+            11,
+            8
+          ],
+          "score": 0.93,
+          "label": 1,
+          "embedding": [
+            1,
+            0
+          ]
+        },
+        {
+          "candidate_id": "f",
+          "tile": "right",
+          "box": [
+            4,
+            2,
+            7,
+            8
+          ],
+          "score": 0.86,
+          "label": 1,
+          "embedding": [
+            0,
+            1
+          ]
+        },
+        {
+          "candidate_id": "h",
+          "tile": "left",
+          "box": [
+            2,
+            2,
+            5,
+            8
+          ],
+          "score": 0.82,
+          "label": 1,
+          "embedding": [
+            0.6,
+            0.8
+          ]
+        }
+      ]
+    }
+  ],
+  "expected_tiles": [
+    "left",
+    "right"
+  ],
+  "thresholds": {
+    "nms": 0.5,
+    "iou_gate": 0.1,
+    "appearance_gate": 0.6,
+    "alpha": 0.5
+  },
+  "exclusive_groups": [
+    [
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "matching_examples": {
+    "track_boxes": [
+      [
+        0,
+        0,
+        2,
+        2
+      ],
+      [
+        1,
+        0,
+        3,
+        2
+      ]
+    ],
+    "detection_boxes": [
+      [
+        0.5,
+        0,
+        2.5,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        2
+      ]
+    ],
+    "track_embeddings": [
+      [
+        1,
+        0
+      ],
+      [
+        0.8,
+        0.6
+      ]
+    ],
+    "detection_embeddings": [
+      [
+        0.8,
+        0.6
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  }
+}

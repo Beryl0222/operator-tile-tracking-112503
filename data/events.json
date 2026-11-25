@@ -1,0 +1,59 @@
+[
+  {
+    "id": "partial-and-correction",
+    "events": [
+      {
+        "kind": "frame",
+        "frame_id": "f1",
+        "arrived_tiles": [
+          "right",
+          "left"
+        ]
+      },
+      {
+        "kind": "frame",
+        "frame_id": "f2",
+        "arrived_tiles": [
+          "right"
+        ]
+      },
+      {
+        "kind": "frame",
+        "frame_id": "f3",
+        "arrived_tiles": [
+          "left",
+          "right"
+        ]
+      },
+      {
+        "kind": "correct",
+        "frame_id": "f1",
+        "candidate_id": "a",
+        "new_box": [
+          7.5,
+          2,
+          11,
+          8
+        ]
+      },
+      {
+        "kind": "query_tracks"
+      }
+    ]
+  },
+  {
+    "id": "outside-window",
+    "events": [
+      {
+        "kind": "advance_empty_complete_frames",
+        "count": 5
+      },
+      {
+        "kind": "correct",
+        "frame_id": "f1",
+        "candidate_id": "b",
+        "new_score": 0.95
+      }
+    ]
+  }
+]

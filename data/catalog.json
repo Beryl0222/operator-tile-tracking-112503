@@ -1,0 +1,8 @@
+{
+  "product": "瓦片候选抑制与跨帧轨迹关联算子",
+  "provenance": "所有数值、实体和事件均为本地合成资料，不代表真实用户或已发生事故。",
+  "format_revision": 1,
+  "tensors": {
+    "feature_probe": "data/tensors/feature_probe.json"
+  }
+}
