@@ -1,0 +1,43 @@
+{
+  "id": "full-detection-frame",
+  "parameters": {
+    "frame_id": "frame-large",
+    "tile_id": "single",
+    "candidate_id_prefix": "candidate-"
+  },
+  "arrays": {
+    "boxes": {
+      "shape": [
+        4096,
+        4
+      ],
+      "pattern": "boxes",
+      "dtype": "float32"
+    },
+    "scores": {
+      "shape": [
+        4096
+      ],
+      "pattern": "uniform",
+      "dtype": "float32",
+      "low": 0.01,
+      "high": 0.99
+    },
+    "embeddings": {
+      "shape": [
+        4096,
+        16
+      ],
+      "pattern": "unit_rows",
+      "dtype": "float32"
+    },
+    "labels": {
+      "shape": [
+        4096
+      ],
+      "pattern": "modulo",
+      "dtype": "int64",
+      "modulus": 3
+    }
+  }
+}
